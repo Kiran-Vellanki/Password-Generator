@@ -63,8 +63,8 @@ public class PasswordGenerator {
 
     private static void addElements(char[] lower, char[] upper) {
 
-        for (int i = 'a'; i <= 'z'; i++) {
-            lower[i - 'a'] = (char) i;
+        for (char i = 'a'; i <= 'z'; i++) {
+            lower[i - 'a'] = i;
             upper[i - 'a'] = (char) (i ^ 32);
         }
     }
